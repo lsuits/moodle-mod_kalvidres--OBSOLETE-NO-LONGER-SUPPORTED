@@ -85,7 +85,7 @@ class mod_kalvidres_mod_form extends moodleform_mod {
                 )
             );
     
-            $courseid = get_courseid_from_context($PAGE->context);
+            $courseid = $COURSE->id;
     
             $conversion_script = "../local/kaltura/check_conversion.php?courseid={$courseid}&entry_id=";
     
